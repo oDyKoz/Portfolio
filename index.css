@@ -1,6 +1,6 @@
 *,
 *:after,
-*:before { /* This resets some default styles for all elements */
+*:before { 
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,19 +8,20 @@
   list-style: none;
 }
 
-:root { /* This defines some global variables for the CSS */
-  --black: (#0D0520);
-  --write: (#BAACDD);
-  --blue: (#9CA5F8);
-  --dark: (#27274d);
-  --gray: (#515151);
+:root {
+  --black: #0D0520;
+  --write: #BAACDD;
+  --blue: #9CA5F8;
+  --dark: #27274d;
+  --gray: #515151;
 }
 
-html { /* This sets the scroll behavior for the HTML document */
+
+html {
   scroll-behavior: smooth;
 }
 
-body * { /* This sets the font and color for all elements inside the body */
+body * {
   font-family: 'JetBrains Mono', sans-serif;
   color: #BAACDD;
 }
@@ -127,6 +128,7 @@ body { /* This sets the height, background, overflow, and position for the body 
   background: #0D0520;
   padding: 50px 25px 50px 25px;
   display: flex;
+  font-size: 150%;
   flex-direction: column;
   align-items: center;
   position: relative;
