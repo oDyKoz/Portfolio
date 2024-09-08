@@ -1,6 +1,6 @@
 *,
 *:after,
-*:before { 
+*:before { /* This resets some default styles for all elements */
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,20 +8,19 @@
   list-style: none;
 }
 
-:root {
-  --black: #0D0520;
-  --write: #BAACDD;
-  --blue: #9CA5F8;
-  --dark: #27274d;
-  --gray: #515151;
+:root { /* This defines some global variables for the CSS */
+  --black: (#0D0520);
+  --write: (#BAACDD);
+  --blue: (#9CA5F8);
+  --dark: (#27274d);
+  --gray: (#515151);
 }
 
-
-html {
+html { /* This sets the scroll behavior for the HTML document */
   scroll-behavior: smooth;
 }
 
-body * {
+body * { /* This sets the font and color for all elements inside the body */
   font-family: 'JetBrains Mono', sans-serif;
   color: #BAACDD;
 }
@@ -32,7 +31,7 @@ body { /* This sets the height, background, overflow, and position for the body 
   overflow-x: hidden;
 }
 
-#menu { /* This sets the position, top, transform, width, padding, display, flex-direction, align-items, gap, background-color, box-shadow, border-radius, z-index, and position for the menu */
+#menu {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -128,22 +127,9 @@ body { /* This sets the height, background, overflow, and position for the body 
   background: #0D0520;
   padding: 50px 25px 50px 25px;
   display: flex;
-  font-size: 150%;
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-
-/** Corregir erro de alinhação **/
-
-@keyframes spin { /* This defines the animation for spinning effect */
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .p3conti1 .box:hover { /* This sets the display, flex-direction, align-items, transform, and transition for the third container's boxes on hover */
@@ -153,49 +139,6 @@ body { /* This sets the height, background, overflow, and position for the body 
 
   transform: scale(1.20);
   transition: .6s;
-}
-
-.p3conti1 .box-circle { /* This sets the display, grid-template-columns, grid-template-rows, align-items, and justify-content for the third container's box-circle */
-  display: flex;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
-}
-
-.p3conti1 .box-circle svg { /* This sets the width, height, and animation for the third container's box-circle's svg */
-  width: 150px;
-  height: 150px;
-  animation: spin 5s linear infinite;
-}
-
-circle { /* This sets the fill, stroke, stroke-width, stroke-dasharray, and stroke-dashoffset for the svg's circles */
-  fill: none;
-  stroke: rgb(0, 0, 0);
-  stroke-width: 10px;
-  stroke-dasharray: 44;
-  stroke-dashoffset: 440;
-}
-
-circle:nth-child(1) { /* This sets the stroke for the first circle */
-  stroke: #0D0520;
-}
-
-circle:nth-child(2) { /* This sets the stroke for the second circle */
-  stroke: rgb(255, 255, 47);
-  stroke-dashoffset: 70;
-}
-
-.number { /* This sets the position, top, left, width, height, display, justify-content, align-items, and color for the number elements */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 105%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
 }
 
 /*Rotapé*/
@@ -230,3 +173,4 @@ footer p a { /* This sets the color, text-decoration, and transition for the foo
 footer p a:hover { /* This sets the color for the footer's links inside the paragraphs on hover */
   color: #BAACDD;
 }
+/*end code
