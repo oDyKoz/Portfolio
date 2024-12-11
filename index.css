@@ -1,6 +1,6 @@
 *,
 *:after,
-*:before { /* This resets some default styles for all elements */
+*:before { 
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,7 +8,7 @@
   list-style: none;
 }
 
-:root { /* This defines some global variables for the CSS */
+:root { 
   --black: (#0D0520);
   --write: (#BAACDD);
   --blue: (#9CA5F8);
@@ -16,16 +16,16 @@
   --gray: (#515151);
 }
 
-html { /* This sets the scroll behavior for the HTML document */
+html { 
   scroll-behavior: smooth;
 }
 
-body * { /* This sets the font and color for all elements inside the body */
+body * { 
   font-family: 'JetBrains Mono', sans-serif;
   color: #BAACDD;
 }
 
-body { /* This sets the height, background, overflow, and position for the body */
+body { 
   height: 100vh;
   background: #1F0439;
   overflow-x: hidden;
@@ -42,21 +42,20 @@ body { /* This sets the height, background, overflow, and position for the body 
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  background-color: #351456;
+  background-color: #d2c9d3;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   z-index: 2;
 }
 
-.menu ul { /* This sets the background-color, list-style, border-radius, padding, font-size for the menu's unordered list */
-  background-color: blueviolet;
+.menu ul { 
   list-style: none;
   border-radius: 25px;
   padding: 10px 10px 10px 10px;
   font-size: 50px;
 }
 
-.p1conti1 { /* This sets the background, display, flex-direction, align-items, padding, gap, z-index, and position for the first container */
+.p1conti1 { 
   background: #0D0520;
   display: flex;
   flex-direction: column;
@@ -67,7 +66,7 @@ body { /* This sets the height, background, overflow, and position for the body 
   position: relative;
 }
 
-.p1conti1 h1 { /* This sets the border-right, width, white-space, overflow, animation, and animation-delay for the first container's h1 */
+.p1conti1 h1 { 
   border-right: 4px solid;
   width: 31ch;
   white-space: nowrap;
@@ -76,29 +75,29 @@ body { /* This sets the height, background, overflow, and position for the body 
     blinking 0.3s infinite step-end alternate;
 }
 
-.p1conti1 img:hover { /* This sets the transform and transition for the first container's images on hover */
+.p1conti1 img:hover { 
   transform: scale(1.05);
   transition: .6s;
 }
 
-@keyframes typing { /* This defines the animation for typing effect */
+@keyframes typing { 
   from {
     width: 0;
   }
 }
 
-@keyframes blinking { /* This defines the animation for blinking effect */
+@keyframes blinking { 
   50% {
     border-color: transparent;
   }
 }
 
-.p1conti1 p { /* This sets the font-weight and font-size for the first container's p */
+.p1conti1 p { 
   font-weight: 100;
   font-size: x-large;
 }
 
-.p2conti1 { /* This sets the background-color, display, flex-direction, padding, gap, and max-width for the second container */
+.p2conti1 { 
   background-color: #1F0439;
   display: flex;
   flex-direction: column;
@@ -107,23 +106,23 @@ body { /* This sets the height, background, overflow, and position for the body 
   max-width: 800px;
 }
 
-.p2conti1 a img:hover { /* This sets the transform and transition for the second container's images on hover */
+.p2conti1 a img:hover { 
   transform: scale(1.20);
   transition: .6s;
 }
 
-.p3conti1 { /* This sets the background, display, align-items, flex-direction, transform, padding, gap, and position for the third container */
+.p3conti1 { 
   background: #0D0520;
   display: flex;
   align-items: center;
-  flex-direction: center;
+  flex-direcion: center;
   transform: rotateX(-200%);
   padding: 25px 95px 100px 195px;
   gap: 250px;
   position: relative;
 }
 
-.h2p { /* This sets the background, padding, display, flex-direction, align-items, and position for the fourth container */
+.h2p { 
   background: #0D0520;
   padding: 50px 25px 50px 25px;
   display: flex;
@@ -132,7 +131,7 @@ body { /* This sets the height, background, overflow, and position for the body 
   position: relative;
 }
 
-.p3conti1 .box:hover { /* This sets the display, flex-direction, align-items, transform, and transition for the third container's boxes on hover */
+.p3conti1 .box:hover { 
   display: flex;
   flex-direction: column;
   align-items: column;
@@ -143,15 +142,15 @@ body { /* This sets the height, background, overflow, and position for the body 
 
 /*Rotapé*/
 
-footer { /* This sets the background-color, display, justify-content, gap, padding, and position for the footer */
+footer { 
   background-color: #000000;
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  padding: 60px 80px;
+  padding: 60px 90px;
 }
 
-footer a { /* This sets the color, display, margin-bottom, text-decoration, and max-width for the footer's links */
+footer a { 
   color: rgb(255, 255, 255);
   display: block;
   margin-bottom: 16px;
@@ -159,18 +158,16 @@ footer a { /* This sets the color, display, margin-bottom, text-decoration, and 
   max-width: 350px;
 }
 
-footer p { /* This sets the margin-bottom and max-width for the footer's paragraphs */
+footer p { 
   margin-bottom: 16px;
-  max-width: 350px;
 }
 
-footer p a { /* This sets the color, text-decoration, and transition for the footer's links inside the paragraphs */
+footer p a { 
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-footer p a:hover { /* This sets the color for the footer's links inside the paragraphs on hover */
+footer p a:hover { 
   color: #BAACDD;
 }
-/*end code
