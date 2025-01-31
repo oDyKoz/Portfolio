@@ -48,6 +48,18 @@ body {
   z-index: 2;
 }
 
+#menu-button {
+  cursor: pointer;
+}
+
+.menu-content ul li:last-child {
+  border-bottom: none;
+}
+
+.menu-content ul li:hover {
+  background-color: #ddd;
+}
+
 .menu ul { 
   list-style: none;
   border-radius: 25px;
