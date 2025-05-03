@@ -183,10 +183,10 @@ section.g1 {
   max-width: 500px;
   flex-direction: column;
   gap: 10px;
-  h3{
-    align-items: center;
-  }
-  
+}
+
+.card1  h3{
+  align-items: center;
 }
 
 
