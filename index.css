@@ -113,7 +113,7 @@ body {
   background-color: #1F0439;
   display: flex;
   flex-direction: column;
-  padding: 100px 95px 100px 95px;
+  padding: 100px 95px 10px 95px;
   gap: 50px;
   max-width: 800px;
 }
@@ -127,9 +127,9 @@ body {
   background: #0D0520;
   display: flex;
   align-items: center;
-  flex-direcion: center;
+  flex-direction: center;
   transform: rotateX(-200%);
-  padding: 25px 95px 100px 195px;
+  padding: 25px 95px 50px 195px;
   gap: 250px;
   position: relative;
 }
@@ -147,9 +147,52 @@ body {
   display: flex;
   flex-direction: column;
   align-items: column;
-
   transform: scale(1.20);
   transition: .6s;
+}
+
+/*Galeria de Projetos*/
+
+/*Regras dos card*/
+section.g1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 95px;
+  gap: 10px;
+}
+
+.g1 img.keep{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  z-index: 10;
+
+  /*Tamanho da imagem*/
+  width: 25px;
+  height: auto;
+
+}
+
+.card1 {
+  display: flex;
+  background-color: #0D0520;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  max-width: 500px;
+  flex-direction: column;
+  gap: 10px;
+  h3{
+    align-items: center;
+  }
+  
+}
+
+
+.card1 img.img_dpo {
+  width: 500px;
+  height: auto;
 }
 
 /*Rotapé*/
@@ -168,10 +211,6 @@ footer a {
   margin-bottom: 16px;
   text-decoration: none;
   max-width: 350px;
-}
-
-footer p { 
-  margin-bottom: 16px;
 }
 
 footer p a { 
