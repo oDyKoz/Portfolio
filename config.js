@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------------- Janela Menu -----------------
 
-document.getElementById('menu-button').addEventListener('click' , function
-() {
+document.getElementById('menu-button').addEventListener('click' , function() 
+  {
     var menuContet = document.getElementById('menu-content');
     if (menuContet.style.display === 'block') {
       menuContet.style.display = 'none';
@@ -18,4 +18,5 @@ document.getElementById('menu-button').addEventListener('click' , function
       this.textConten = 'Fechar Menu'
     }
 
-});
+  }
+);
