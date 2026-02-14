@@ -4,7 +4,9 @@
   "description": "Futuras alterações:",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/oDyKoz/Portfolio/issues"
   },
-  "homepage": "https://github.com/oDyKoz/Portfolio#readme"
+  "homepage": "https://github.com/oDyKoz/Portfolio#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
 }
