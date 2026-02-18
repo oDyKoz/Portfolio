@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------------- Janela Menu -----------------
 
-document.getElementById('menu-button').addEventListener('click' , function() 
+document.getElementById('menu-float').addEventListener('click' , function() 
   {
-    var menuContet = document.getElementById('menu-content');
+    var menuContet = document.getElementById('menu-float');
     if (menuContet.style.display === 'block') {
       menuContet.style.display = 'none';
     } else {

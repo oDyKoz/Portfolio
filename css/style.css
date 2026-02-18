@@ -56,7 +56,7 @@ body {
   border-bottom: none;
 }
 
-.menu-content ul li:hover {
+#menu-content ul li:hover {
   background-color: #ddd;
 }
 
