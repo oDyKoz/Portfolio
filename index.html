@@ -4,29 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="./dist/output.css" rel="stylesheet">
   <title>Portfólio</title>
 </head>
 
 <body>
 
   <!--Menu flutuante-->
-  <nav id="menu">
-    <div>
-      <button id="menu-button"><img src="img/Icons/Button.png" alt="#"></button>
+<nav class="fixed top-[50%] flex flex-col transform-[translateY(-50%)] w-[37px] p-[12px 8px] ml-[30px] items-center bg-black/50 shadow-[0 0 25px rgba(0, 0, 0, 0.25)] rounded-xl z-[2] ">
+
+    <div id="menu-float" class="pointer-events-auto">
+      <button>
+        <img src="assets/Icons/Button.png" alt="#"></button>
     </div>
-      <div class="menu-content" id="menu-content">
+
+      <div class=" p-[10px 10px 10px 10px] text-[50px]">
         <ul class="menu-list">
-          <a href="#inicio" class="img" id="menu-button">
-            <img src="img/casa.svg" alt="">
-          <li><a href="#sobre" class="img">
-            <img src="img/informacoes.svg" alt="">
+          <a href="#inicio" class="img hover:bg-sky-700">
+            <img src="assets/Icons/Home.png" alt="">
+          <li>
+          <a href="#sobre" class="img w-[20px]">
+            <img src="assets/Icons/Info.png" alt="">
           </a>
-          <li><a href="#experiencia" class="img">
-            <img src="img/coracao-de-mao.svg" alt="">
+          <li>
+          <a href="#experiencia" class="img ">
+            <img src="assets/img/coracao-de-mao.svg" alt="">
           </a>
-          <li><a href="#contato" class="img">
-            <img src="img/do-utilizador.svg" alt="">
+          <li>
+          <a href="#contato" class="img" id="menu-button">
+            <img src="assets/img/do-utilizador.svg" alt="">
           </a>
         </ul>
       </div>
@@ -39,9 +46,12 @@
         <h1>Seja bem vindo ao meu <br> Portfólio</h1>
         <p>Mais informações</p>
         <a href="#sobre" class="link-suave">
-          <img src="img/Icons/Arrow.png" >
+          <img src="assets/Icons/Arrow.png">
         </a>
       </div>
+      <figure class="p1conti2">
+        <img src="assets/img/foto.png" class="w-[200px]">
+      </figure>
     </section>
 
     <!--Sobre Mim-->
@@ -57,22 +67,22 @@
         <div>
           <div class="p2conti2">
             <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank">
-              <img src="img/Social/LinkedIn.png">
+              <img src="assets/img/Social/LinkedIn.png">
             </a>
             <a href="https://github.com/oDyKoz" target="_blank">
-              <img src="img/Social/GitHub.png" >
+              <img src="assets/img/Social/GitHub.png" >
             </a>
             <a href="https://open.spotify.com/user/vfa3g2ycdg1zpbt8k7edxwc4v" target="_blank">
-              <img src="img/Social/Spotify.png">
+              <img src="assets/img/Social/Spotify.png">
             </a>
             <a href="https://discord.com/users/840435508844953641" target="_blank">
-              <img src="img/Social/Discord.png">
+              <img src="assets/img/Social/Discord.png">
             </a>
             <a href="https://www.twitch.tv/odykoz" target="_blank">
-              <img src="img/Social/Twitch.png">
+              <img src="assets/img/Social/Twitch.png">
             </a>
             <a href="https://t.me/DymasF" target="_blank">
-              <img src="img/Social/Telegram.png">
+              <img src="assets/img/Social/Telegram.png">
             </a>
           </div>
         </div>
@@ -84,7 +94,7 @@
       <!-- Paschoalloto -->
       <div id="cardLP" class="card2">
         <a href="https://www.paschoalotto.com.br/" target="_blank">
-          <img src="img/Work/logo_paschoalotto-servicos-financeiros_EL0Qh8 1.png">
+          <img src="assets/img/Work/logo_paschoalotto-servicos-financeiros_EL0Qh8 1.png">
         </a>
         <h2>Paschoalotto</h2>
         <p>Recuperação de Crédito <br>
@@ -94,7 +104,7 @@
       <!-- Tray E-commerce -->
       <div id="cardLP" class="card3">
         <a href="https://www.tray.com.br/" target="_blank">
-          <img src="img/Work/tray-min 1.png">
+          <img src="assets/img/Work/tray-min 1.png">
         </a>
         <h2>Tray E-commmerce</h2>
         <p>Analista de Suporte Técnico <br>
@@ -111,7 +121,7 @@
       <div>
         <div class="card1">
             <h3>Projeto DPOnet</h3>
-            <a href="https://github.com/oDyKoz/DPOnet" target="_blank" ><img src="img/Projects/DPOnet.png" class="img_dpo"></a>
+            <a href="https://github.com/oDyKoz/DPOnet" target="_blank" ><img src="assets/img/Projects/DPOnet.png" class="img_dpo"></a>
         </div>
       </div>
     </section>
@@ -123,13 +133,13 @@
         <div>
           <strong class="list1">Contato</strong>
           <a href="https://wa.me/+5514997919470" target="_blank">
-            <img src="img/Social/WhatsApp.png">
+            <img src="assets/img/Social/WhatsApp.png">
           </a>
           <a href="" target="_blank">
-            <img src="img/Social/Telegram-Mini.png">
+            <img src="assets/img/Social/Telegram-Mini.png">
           </a>
           <a href="">
-            <img src="img/Social/Discord-Mini.png" alt="">
+            <img src="assets/img/Social/Discord-Mini.png" alt="">
           </a>
         </div>
 
@@ -138,7 +148,7 @@
 
   </main>
   
-  <script src="config.js"></script>
+  <script src="js/config.js"></script>
 
 </body>
 
