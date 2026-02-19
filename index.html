@@ -12,29 +12,29 @@
 <body>
 
   <!--Menu flutuante-->
-<nav class="fixed top-[50%] flex flex-col transform-[translateY(-50%)] w-[37px] p-[12px 8px] ml-[30px] items-center bg-black/50 shadow-[0 0 25px rgba(0, 0, 0, 0.25)] rounded-xl z-[2] ">
+<nav class="fixed top-[50%] flex flex-col transform-[translateY(-50%)] w-[37px] items-center bg-black/50 shadow-[0_0_25px_rgba(0,0,0,0.25)] rounded-xl z-[2]">
 
     <div id="menu-float" class="pointer-events-auto">
       <button>
         <img src="assets/Icons/Button.png" alt="#"></button>
     </div>
 
-      <div class=" p-[10px 10px 10px 10px] text-[50px]">
-        <ul class="menu-list">
-          <a href="#inicio" class="img hover:bg-sky-700">
-            <img src="assets/Icons/Home.png" alt="">
-          <li>
+      <div id="menu-list">
+        <ul>
           <a href="#sobre" class="img w-[20px]">
             <img src="assets/Icons/Info.png" alt="">
           </a>
           <li>
           <a href="#experiencia" class="img ">
-            <img src="assets/img/coracao-de-mao.svg" alt="">
+            <img src="assets/Icons/Language.png" alt="">
           </a>
           <li>
-          <a href="#contato" class="img" id="menu-button">
-            <img src="assets/img/do-utilizador.svg" alt="">
+          <a href="#projects" class="img">
+            <img src="assets/Icons/Projects.png">
           </a>
+          <a href="#inicio" class="img hover:bg-sky-700">
+            <img src="assets/Icons/Home.png" alt="">
+          <li>
         </ul>
       </div>
   </nav>
@@ -43,15 +43,17 @@
     <!--Titulo destacado na central da tela e juntamente com um sub titulo-->
     <section id="inicio">
       <div class="p1conti1">
-        <h1>Seja bem vindo ao meu <br> Portfólio</h1>
-        <p>Mais informações</p>
-        <a href="#sobre" class="link-suave">
-          <img src="assets/Icons/Arrow.png">
-        </a>
+        <div>
+          <h1>Seja bem vindo ao meu <br> Portfólio</h1>
+          <p>Mais informações</p>
+        </div>
+          <a href="#sobre">
+            <img src="assets/Icons/Arrow.png">
+          </a>
+        <figure class="p1conti2">
+          <img src="assets/img/foto.png" class="w-[200px]">
+        </figure>
       </div>
-      <figure class="p1conti2">
-        <img src="assets/img/foto.png" class="w-[200px]">
-      </figure>
     </section>
 
     <!--Sobre Mim-->
@@ -113,6 +115,10 @@
       </div>
     </section>
 
+    <!-- Habilidades -->
+    <section>
+
+    </section>
 
     <!--Projetos-->
     <section class="g1" id="Projects">
