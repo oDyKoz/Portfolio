@@ -8,30 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ----------------- Janela Menu -----------------
 
-document.getElementById('menu-float').addEventListener('click', function() 
-{
-  const menuContent = document.getElementById('menu-list');
+document.getElementById('menu-float').addEventListener('click' , function() 
+  {
+    var menuContet = document.getElementById('menu-float');
+    if (menuContet.style.display === 'block') {
+      menuContet.style.display = 'none';
+    } else {
+      menuContet.style.display = 'block';
+      this.textConten = 'Fechar Menu'
+    }
 
-  if (menuContent.classList.contains('hidden')) {
-    menuContent.classList.remove('hidden');
-    menuContent.classList.add('flex');
-  } else {
-    menuContent.classList.remove('flex');
-    menuContent.classList.add('hidden');
   }
-}
 );
-
-// document.getElementById('menu-float').addEventListener('click', function()
-// {
-//   const menuContent = document.getElementById('menu-content');
-
-//   if (menuContent.classList.contains('flex')) {
-//     menuContent.classList.remove('flex');
-//     menuContent.classList.add('flex-none');
-//   } else {
-//     menuContent.classList.remove('flex-none');
-//     menuContent.classList.add('flex');
-//   }
-// }
-// );

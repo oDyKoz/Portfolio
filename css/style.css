@@ -78,6 +78,37 @@ body {
   position: relative;
 }
 
+.p1conti1 h1 { 
+  border-right: 4px solid;
+  width: 31ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(20),
+    blinking 0.3s infinite step-end alternate;
+}
+
+.p1conti1 img:hover { 
+  transform: scale(1.05);
+  transition: .6s;
+}
+
+@keyframes typing { 
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blinking { 
+  50% {
+    border-color: transparent;
+  }
+}
+
+.p1conti1 p { 
+  font-weight: 100;
+  font-size: x-large;
+}
+
 .p2conti1 { 
   background-color: #1F0439;
   display: flex;
