@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+/* suas fontes abaixo */
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../assets/fonts/Coolvetica-Rg.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT0 Medium';
+  src: url('../assets/fonts/TT0_Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT0 Light';
+  src: url('../assets/fonts/TT0_Light.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
