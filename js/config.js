@@ -10,12 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById('menu-float').addEventListener('click' , function() 
   {
-    var menuContet = document.getElementById('menu-float');
-    if (menuContet.style.display === 'block') {
-      menuContet.style.display = 'none';
+    var menuContet = document.getElementById('menu-list');
+    if (menuContet.classList.contains('flex')) {
+      menuContet.classList.add('hidden');
+      menuContet.classList.remove('flex');
     } else {
-      menuContet.style.display = 'block';
-      this.textConten = 'Fechar Menu'
+      menuContet.classList.add('flex');
+      menuContet.classList.remove('hidden');
     }
 
   }
