@@ -14,6 +14,7 @@
   --blue: (#9CA5F8);
   --dark: (#27274d);
   --gray: (#515151);
+  --purple-black: (#160925);
 }
 
 html { 
@@ -66,6 +67,40 @@ body {
   padding: 10px 10px 10px 10px;
   font-size: 50px;
 }
+
+#increaseSize {
+  font-family: 'tt0 medium', sans-serif;
+}
+
+#inicio {
+  background-color: #160925;
+  padding: 90px 20px 150px 40px;
+}
+
+#foto {
+  transform: rotateZ(-50deg);
+}
+
+#Elipse1 {
+  /* Ellipse 1 */
+
+  padding: 5px;
+  border-radius: 180px 120px 180px 120px;
+  transform: rotateZ(25deg);
+  background: #6a2f9e52;
+}
+
+#Elipse2 {
+  /* Ellipse 2 */
+
+
+  padding: 5px;
+  border-radius: 180px 120px 180px 120px;
+  transform: rotateZ(25deg);
+  background: #6a2f9e52;
+}
+
+
 
 .p1conti1 { 
   background: #0D0520;
