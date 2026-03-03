@@ -9,10 +9,10 @@
   <title>Portfólio</title>
 </head>
 
-<body>
+<body class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
 
   <!--Menu flutuante-->
-<nav class="fixed top-[50%] flex flex-col transform-[translateY(-50%)] w-[37px] p-[12px 8px] ml-[30px] items-center bg-black/50 shadow-[0 0 25px rgba(0, 0, 0, 0.25)] rounded-xl z-[2] ">
+<nav class="fixed top-[50%] flex flex-col transform-[translateY(-50%)] w-[37px] p-[12px 8px] ml-[10px] items-center bg-black/50 shadow-[0 0 25px rgba(0, 0, 0, 0.25)] rounded-xl z-[2] ">
 
 
     <div id="menu-float" class="pointer-events-auto">
@@ -52,19 +52,24 @@
   <!-- Inicio -->
     <section id="inicio">
 
-      <div id="conteinerFoto" class="flex justify-center items-center sm:gap-50 gap-10 flex-col sm:flex-row">
-        <div id="Elipse2">
+      <div id="conteinerFoto" class="flex justify-center items-center
+      lg:gap-20 gap-10 flex-col lg:flex-row">
+        <div id="Elipse2">  
           <div id="Elipse1">
             <figure id="foto">
-              <img src="assets/img/foto.png" class="w-50 max-width-1/3 sm:w-80">
+              <img src="assets/img/foto.png" class="rounded-full">
             </figure>
           </div>
         </div>
 
         <div id="conteinerInfo">
             <div>
-              <h1  id="increaseSize" class="text-[30px] ">Seja bem vindo ao meu <br> Portfólio</h1>
-              <p>Mais informações</p>
+              <h1 id="increaseSize" class="text-[30px]">Seja Bem-vindo(a) ao meu 
+                <spam class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-x-10 before:bg-fuchsia-500 hover:before:-skew-y-10 before:transition-transform before:duration-300 hover:before:bg-fuchsia-600">
+                <span class="relative text-white">Portfólio</span>
+              </spam>
+            </h1>
+              <p>Clique na seta para saber mais!</p>
             </div>
 
             <div class=" flex w-[35px] sm:top-[50%] transform-[translateY(30%)]">
@@ -75,38 +80,39 @@
         </div>
     </section>
 
-    <!-- Sobre Mim -->
+  <!-- Sobre Mim -->
     <section id="sobre">
-      <div class="p2conti1">
-        <h2>Sobre Mim</h2>
-        <p>
-          Olá, me chamo Dymas Felipe, sou estudando na área de programação web e desejo ser um Full-Stack. Para isso, estarei publicando todo meu aprendizagem nas minhas redes sociais, juntamente, tentando me agregar ao algum ramo no mercado tecnológico. 
-        </p>
-        <p>
-          Tenho experiência com Html,Css,JS e diariamente faço desafios no Exercism, com foco de aumentar meu conhecimento na área desenvolvedor web. Tenho conhecimento prévio em Hardware e Microcomputadores, como Montagem de Computadores e Arduino.
-        </p>
-        <div>
-          <div class="p2conti2">
-            <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank">
+      <div class="flex flex-col justify-center gap-5 ">
+        <div class="flex flex-col gap-10 justify-center items-stard">
+          <h2 class="font-medium text-[40px]">Me conheça um pouco melhor!</h2>
+          <p>
+            Olá, tudo bem? <br> Me chamo Dymas Felipe, tenho 20 anos idade atualmente e sou entusiasta na área de Desenvolvimento Web & Software. Sou apaixonado por tecnologia e estou sempre buscando aprender e me aprimorar nessa área. Meu objetivo é me tornar um desenvolvedor web de destaque, criando soluções inovadoras e impactantes para os usuários. Estou comprometido em adquirir conhecimentos sólidos e habilidades práticas para alcançar esse objetivo.
+          </p>
+          <p>
+            Possuo experiências em atendimento ao cliente, suporte técnico e desenvolvimento de projetos pessoais, o que me proporcionou habilidades de comunicação, resolução de problemas e trabalho em equipe. Estou sempre aberto a novos desafios e oportunidades de crescimento profissional. Acredito que minha paixão pela tecnologia, combinada com minha dedicação e vontade de aprender, me tornarão um desenvolvedor web de sucesso no futuro.
+          </p>
+        </div>
+          <div class="flex gap-3 w-[450px]">
+            <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank" class="hover:animate-pulse">
               <img src="assets/img/Social/LinkedIn.png">
             </a>
-            <a href="https://github.com/oDyKoz" target="_blank">
+            <a href="https://github.com/oDyKoz" target="_blank" class="hover:animate-pulse">
               <img src="assets/img/Social/GitHub.png" >
             </a>
-            <a href="https://open.spotify.com/user/vfa3g2ycdg1zpbt8k7edxwc4v" target="_blank">
+            <a href="https://open.spotify.com/user/vfa3g2ycdg1zpbt8k7edxwc4v" target="_blank" class="hover:animate-pulse">
               <img src="assets/img/Social/Spotify.png">
             </a>
-            <a href="https://discord.com/users/840435508844953641" target="_blank">
+            <a href="https://discord.com/users/840435508844953641" target="_blank" class="hover:animate-pulse">
               <img src="assets/img/Social/Discord.png">
             </a>
-            <a href="https://www.twitch.tv/odykoz" target="_blank">
+            <a href="https://www.twitch.tv/odykoz" target="_blank" class="hover:animate-pulse">
               <img src="assets/img/Social/Twitch.png">
             </a>
-            <a href="https://t.me/DymasF" target="_blank">
+            <a href="https://t.me/DymasF" target="_blank" class="hover:animate-pulse">
               <img src="assets/img/Social/Telegram.png">
             </a>
           </div>
-        </div>
+      </div>
     </section>
 
     <!-- Linha do Tempo -->

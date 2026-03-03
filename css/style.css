@@ -32,6 +32,10 @@ body {
   overflow-x: hidden;
 }
 
+.font-medium { 
+  font-family: 'tt0 medium', sans-serif;
+}
+
 #menu {
   position: fixed;
   top: 50%;
@@ -68,13 +72,39 @@ body {
   font-size: 50px;
 }
 
+#sobre {
+  padding: 80px 150px 50px 120px;
+}
+
+@media (max-width:768px) {
+  #sobre {
+    padding: 50px 40px 50px 40px;
+  }
+}
+
+#conteinerInfo p {
+  padding: 20px 0px 0px 0px;
+}
+
 #increaseSize {
   font-family: 'tt0 medium', sans-serif;
 }
 
 #inicio {
   background-color: #160925;
-  padding: 90px 20px 150px 40px;
+  padding: 100px 20px 150px 40px;
+  #foto {
+    width: 280px;
+  }
+}
+
+@media (max-width: 780px) {
+  #inicio {
+    padding: 80px 40px 120px 40px;
+    #foto{
+        width: 200px;
+        }
+    }
 }
 
 #foto {
@@ -100,6 +130,9 @@ body {
   background: #6a2f9e52;
 }
 
+/* #sobre {
+  padding: 50px;
+} */
 
 
 .p1conti1 { 
