@@ -35,6 +35,11 @@
             <img src="assets/Icons/Language.png" class="hover:bg-sky-700 rounded-xl">
           </a></li>
           <li>
+            <a href="#skills" class="img">
+              <img src="assets/Icons/Skills.png" class="hover:bg-sky-700 rounded-xl">
+            </a>
+          </li>
+          <li>
           <a href="#projects" class="img">
             <img src="assets/Icons/Projects.png" class="hover:bg-sky-700 rounded-xl">
           </a></li>
@@ -69,7 +74,8 @@
                 <span class="relative text-white">Portfólio</span>
               </spam>
             </h1>
-              <p>Clique na seta para saber mais!</p>
+              <p>Clique na seta para saber mais <br>
+                ou no menu ao lado!</p>
             </div>
 
             <div class=" flex w-[35px] sm:top-[50%] transform-[translateY(30%)]">
@@ -116,30 +122,73 @@
     </section>
 
     <!-- Linha do Tempo -->
-    <section class="g1" id="LP">
-      <h1>Linha do Tempo</h1>
-      <!-- Paschoalloto -->
-      <div id="cardLP" class="card2">
-        <a href="https://www.paschoalotto.com.br/" target="_blank">
-          <img src="assets/img/Work/logo_paschoalotto-servicos-financeiros_EL0Qh8 1.png">
-        </a>
-        <h2>Paschoalotto</h2>
-        <p>Recuperação de Crédito <br>
-        Estagiário<br>
-        <i>jane/2022 - agosto/2022</i></p>
+    <section class="flex flex-col center gap-25 lg:gap-30 bg-[#491D74]" id="experiencia">
+      <div>
+        <h1 class="font-medium lg:text-[40px] text-[30px]">
+          Linha do Tempo
+        </h1>
+        <p class="text-center"><i>Clique nas imagens para navegar</i></p>
       </div>
-      <!-- Tray E-commerce -->
-      <div id="cardLP" class="card3">
-        <a href="https://www.tray.com.br/" target="_blank">
-          <img src="assets/img/Work/tray-min 1.png">
-        </a>
-        <h2>Tray E-commmerce</h2>
-        <p>Analista de Suporte Técnico <br>
-        Jovem Aprendiz<br>
-        <i>jane/2025 - jane/2026</i></p>
+      <div class="flex 2x1:flex-row md:flex-row flex-col gap-20">
+        <!-- Paschoalloto -->
+        <div class="flex lg:flex-row flex-col p-20px gap-5">
+          <a href="https://www.paschoalotto.com.br/" target="_blank">
+            <img class="max-xl:w-[120px] xl:w-[120px]" src="assets/img/Work/Paschoalotto.png">
+          </a>
+          <div class="flex flex-col gap-3">
+            <h2 class="font-medium text-[28px]">Paschoalotto.</h2>
+            <p>Recuperação de Crédito, <br>
+            Estagiário.<br>
+            <i>jane/2022 - agosto/2022</i></p>
+          </div>
+        </div>
+        <!-- Tray E-commerce -->
+        <div class="flex lg:flex-row flex-col p-20px gap-5">
+          <a href="https://www.tray.com.br/" target="_blank">
+              <img class="max-xl:w-[120px] xl:w-[150px]" src="assets/img/Work/Tray.png">
+          </a>
+          <div class="flex flex-col gap-3">
+            <h2 class="font-medium text-[28px]">Tray E-commerce.</h2>
+            <p>Analista de Suporte Técnico, <br>
+          Jovem Aprendiz.<br>
+          <i>jane/2025 - jane/2026</i></p>
+        </div>
       </div>
     </section>
 
+    <!-- Linguagens que tenho conhecimento e familiaridade -->
+
+    <section class="flex flex-col gap-5 lg:gap-5 bg-[#281040]" id="skills">
+      <div class="flex flex-col gap-10 center">
+        <h1 class="font-medium text-[38px]">
+          Conhecimentos & Linguagens</h1>
+      </div>
+      <!-- Linguagens e Tecnologias -->
+      <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center p-20px ">
+        <h2 class="font-medium text-[32px]">
+          Linguagens e Tecnologias
+        </h2>
+        <div class="flex flex-row gap-15 lg:w-[430px] w-[390px]">
+          <span class="grid-cols-1 md:grid-cols-2 lg:grid-cols-2 auto-rows-auto">
+            <img src="assets/Icons/Linguage/Python.svg" alt="Python">
+          </span>
+          <span>
+            <img src="assets/Icons/Linguage/HTML.svg" alt="HTML">
+          </span>
+          <span>
+            <img src="assets/Icons/Linguage/JavaScript.svg" alt="JavaScript">
+          </span>
+          <span>
+            <img src="assets/Icons/Linguage/PHP.svg" alt="PHP">
+          </span>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-medium text-[32px]">
+          Skills Adicionais
+         </h2>
+      </div>
+    </section>
 
     <!-- Projetos -->
     <section class="flex flex-col items-center p-[50px]" >

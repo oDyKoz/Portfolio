@@ -15,6 +15,7 @@
   --dark: (#27274d);
   --gray: (#515151);
   --purple-black: (#160925);
+  --purple-light-n2: (#B988E3);
 }
 
 html { 
@@ -34,6 +35,21 @@ body {
 
 .font-medium { 
   font-family: 'tt0 medium', sans-serif;
+}
+
+.center { 
+  display: flex;
+  padding: 0px 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills {
+  padding: 30px 0px 0px 0px;
+}
+
+.p-20px { 
+  padding: 20px;
 }
 
 #menu {
@@ -133,6 +149,10 @@ body {
 /* #sobre {
   padding: 50px;
 } */
+
+#experiencia {
+  padding: 30px 145px 160px 190px;
+}
 
 
 .p1conti1 { 
