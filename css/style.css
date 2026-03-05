@@ -39,7 +39,6 @@ body {
 
 .center { 
   display: flex;
-  padding: 0px 80px;
   justify-content: center;
   align-items: center;
 }
@@ -152,6 +151,12 @@ body {
 
 #experiencia {
   padding: 30px 145px 160px 190px;
+}
+
+@media (max-width: 780px) {
+  #experiencia {
+    padding: 30px 40px 160px 40px;
+  }
 }
 
 
