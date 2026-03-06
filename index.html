@@ -6,60 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./dist/output.css">
-  <title>Portfólio</title>
+  <title>Portfólio de Dymas - Desenvolvedor Web e Software</title>
 </head>
 
 <body class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
 
-  <!--Menu flutuante-->
-<nav class="fixed top-[50%] flex flex-col transform-[translateY(-50%)] w-[37px] p-[12px 8px] ml-[10px] items-center bg-black/50 shadow-[0 0 25px rgba(0, 0, 0, 0.25)] rounded-xl z-[2] ">
-
-
-    <div id="menu-float" class="pointer-events-auto">
-      <button>
-        <img src="assets/Icons/Button.png"
-         class="hover:bg-sky-700 pointer rounded-xl">
-      </button>
-    </div>
-
-
-      <div id="menu-list" class="hidden">
-        <ul>
-          <li>
-          <a href="#sobre">
-            <img src="assets/Icons/Info.png"
-             class="hover:bg-sky-700 rounded-xl">
-          </a></li>
-          <li>
-          <a href="#experiencia" class="img ">
-            <img src="assets/Icons/Language.png" class="hover:bg-sky-700 rounded-xl">
-          </a></li>
-          <li>
-            <a href="#skills" class="img">
-              <img src="assets/Icons/Skills.png" class="hover:bg-sky-700 rounded-xl">
-            </a>
-          </li>
-          <li>
-          <a href="#projects" class="img">
-            <img src="assets/Icons/Projects.png" class="hover:bg-sky-700 rounded-xl">
-          </a></li>
-          <li>
-            <a href="#inicio" class="img hover:bg-sky-700">
-              <img src="assets/Icons/Home.png" 
-              class="hover:bg-sky-700 rounded-xl">
-            </a></li>
-
-        </ul>
-      </div>
-</nav>
+  <header>
+    <nav class="flex bg-transparent-nav z-[2] fixed justify-end center">
+      <ul class="flex flex-row lg:gap-10 gap-5 text-[18px] text-white hover:text-fuchsia-500">
+        <li>
+          <a href="/">Início</a>
+        </li>
+        <li>
+          <a href="#sobre">Sobre Mim</a>
+        </li>
+        <li>
+          <a href="#experiencia">Experiência</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projetos">Projetos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
-  <!-- Inicio -->
+    <!-- Inicio -->
     <section id="inicio">
 
       <div id="conteinerFoto" class="flex justify-center items-center
       lg:gap-20 gap-10 flex-col lg:flex-row">
-        <div id="Elipse2">  
+        <div id="Elipse2">
           <div id="Elipse1">
             <figure id="foto">
               <img src="assets/img/foto.png" class="rounded-full">
@@ -68,65 +48,61 @@
         </div>
 
         <div id="conteinerInfo">
-            <div>
-              <h1 id="increaseSize" class="text-[30px]">Seja Bem-vindo(a) ao meu 
-                <spam class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-x-10 before:bg-fuchsia-500 hover:before:-skew-y-10 before:transition-transform before:duration-300 hover:before:bg-fuchsia-600">
+          <div>
+            <h1 id="increaseSize" class="text-[30px]">Seja Bem-vindo(a) ao meu
+              <spam
+                class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-x-10 before:bg-fuchsia-500 hover:before:-skew-y-10 before:transition-transform before:duration-300 hover:before:bg-fuchsia-600">
                 <span class="relative text-white">Portfólio</span>
               </spam>
             </h1>
-              <p>Clique na seta para saber mais <br>
-                ou no menu ao lado!</p>
-            </div>
+            <p>Clique na seta para saber mais <br>
+              ou no menu ao lado!</p>
+          </div>
 
-            <div class=" flex w-[35px] sm:top-[50%] transform-[translateY(30%)]">
-              <a href="#sobre" class="animate-bounce">
-                <img src="assets/Icons/Arrow.png">
-              </a>
-            </div>
+          <div class=" flex w-[35px] sm:top-[50%] transform-[translateY(30%)]">
+            <a href="#sobre" class="animate-bounce">
+              <img src="assets/Icons/Arrow.png">
+            </a>
+          </div>
         </div>
     </section>
 
-  <!-- Sobre Mim -->
+    <!-- Sobre Mim -->
     <section id="sobre">
       <div class="flex flex-col justify-center gap-5 ">
         <div class="flex flex-col gap-10 justify-center items-stard">
           <h2 class="font-medium text-[40px]">Me conheça um pouco melhor!</h2>
           <p>
-            Olá, tudo bem? <br> Me chamo Dymas Felipe, tenho 20 anos idade atualmente e sou entusiasta na área de Desenvolvimento Web & Software. Sou apaixonado por tecnologia e estou sempre buscando aprender e me aprimorar nessa área. Meu objetivo é me tornar um desenvolvedor web de destaque, criando soluções inovadoras e impactantes para os usuários. Estou comprometido em adquirir conhecimentos sólidos e habilidades práticas para alcançar esse objetivo.
+            Olá, tudo bem? <br> Me chamo Dymas Felipe, tenho 20 anos idade atualmente e sou entusiasta na área de
+            Desenvolvimento Web & Software. Sou apaixonado por tecnologia e estou sempre buscando aprender e me
+            aprimorar nessa área. Meu objetivo é me tornar um desenvolvedor web de destaque, criando soluções inovadoras
+            e impactantes para os usuários. Estou comprometido em adquirir conhecimentos sólidos e habilidades práticas
+            para alcançar esse objetivo.
           </p>
           <p>
-            Possuo experiências em atendimento ao cliente, suporte técnico e desenvolvimento de projetos pessoais, o que me proporcionou habilidades de comunicação, resolução de problemas e trabalho em equipe. Estou sempre aberto a novos desafios e oportunidades de crescimento profissional. Acredito que minha paixão pela tecnologia, combinada com minha dedicação e vontade de aprender, me tornarão um desenvolvedor web de sucesso no futuro.
+            Possuo experiências em atendimento ao cliente, suporte técnico e desenvolvimento de projetos pessoais, o que
+            me proporcionou habilidades de comunicação, resolução de problemas e trabalho em equipe. Estou sempre aberto
+            a novos desafios e oportunidades de crescimento profissional. Acredito que minha paixão pela tecnologia,
+            combinada com minha dedicação e vontade de aprender, me tornarão um desenvolvedor web de sucesso no futuro.
           </p>
         </div>
-          <div class="flex gap-3 w-[450px]">
-            <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank" class="hover:animate-pulse">
-              <img src="assets/img/Social/LinkedIn.png">
-            </a>
-            <a href="https://github.com/oDyKoz" target="_blank" class="hover:animate-pulse">
-              <img src="assets/img/Social/GitHub.png" >
-            </a>
-            <a href="https://open.spotify.com/user/vfa3g2ycdg1zpbt8k7edxwc4v" target="_blank" class="hover:animate-pulse">
-              <img src="assets/img/Social/Spotify.png">
-            </a>
-            <a href="https://discord.com/users/840435508844953641" target="_blank" class="hover:animate-pulse">
-              <img src="assets/img/Social/Discord.png">
-            </a>
-            <a href="https://www.twitch.tv/odykoz" target="_blank" class="hover:animate-pulse">
-              <img src="assets/img/Social/Twitch.png">
-            </a>
-            <a href="https://t.me/DymasF" target="_blank" class="hover:animate-pulse">
-              <img src="assets/img/Social/Telegram.png">
-            </a>
-          </div>
+        <div class="flex gap-3 w-[450px]">
+          <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank" class="hover:animate-pulse">
+            <img src="assets/img/Social/LinkedIn.png">
+          </a>
+          <a href="https://github.com/oDyKoz" target="_blank" class="hover:animate-pulse">
+            <img src="assets/img/Social/GitHub.png">
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- Linha do Tempo -->
     <section class="flex flex-col center gap-25 lg:gap-30 bg-[#491D74]" id="experiencia">
       <div>
-        <h1 class="font-medium lg:text-[40px] text-[30px]">
+        <h2 class="font-medium lg:text-[40px] text-[30px] margin-top">
           Linha do Tempo
-        </h1>
+        </h2>
         <p class="text-center"><i>Clique nas imagens para navegar</i></p>
       </div>
       <div class="flex 2x1:flex-row md:flex-row flex-col gap-20">
@@ -138,39 +114,42 @@
           <div class="flex flex-col gap-3">
             <h2 class="font-medium text-[28px]">Paschoalotto.</h2>
             <p>Recuperação de Crédito, <br>
-            Estagiário.<br>
-            <i>jane/2022 - agosto/2022</i></p>
+              Estagiário.<br>
+              <i>jane/2022 - agosto/2022</i>
+            </p>
           </div>
         </div>
         <!-- Tray E-commerce -->
         <div class="flex lg:flex-row flex-col p-20px gap-5">
           <a href="https://www.tray.com.br/" target="_blank">
-              <img class="max-xl:w-[120px] xl:w-[150px]" src="assets/img/Work/Tray.png">
+            <img class="max-xl:w-[120px] xl:w-[150px]" src="assets/img/Work/Tray.png">
           </a>
           <div class="flex flex-col gap-3">
             <h2 class="font-medium text-[28px]">Tray E-commerce.</h2>
             <p>Analista de Suporte Técnico, <br>
-          Jovem Aprendiz.<br>
-          <i>jane/2025 - jane/2026</i></p>
+              Jovem Aprendiz.<br>
+              <i>jane/2025 - jane/2026</i>
+            </p>
+          </div>
         </div>
-      </div>
     </section>
 
     <!-- Linguagens que tenho conhecimento e familiaridade -->
 
     <section class="flex flex-col bg-[#281040]" id="skills">
       <div class="flex flex-col gap-10 center">
-        <h1 class="font-medium max-md:text-[30px] text-[40px]">
-          Conhecimentos & Linguagens</h1>
+        <h2 class="font-medium max-md:text-[30px] text-[40px] padding-top">
+          Conhecimentos & Linguagens</h2>
       </div>
       <!-- Linguagens e Tecnologias -->
       <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center p-20px ">
         <h2 class="font-medium max-md:text-[28px] text-[32px]">
           Linguagens e Tecnologias
         </h2>
-        <div class="flex max-sm:grid flex-row max-sm:grid-cols-2 max-sm:gap-10 gap-20 max-sm:w-[200px] max-lg:w-[480px] max-xl:w-[500px]">
+        <div
+          class="flex max-sm:grid flex-row max-sm:grid-cols-2 max-sm:gap-10 gap-20 max-sm:w-[200px] max-lg:w-[480px] max-xl:w-[500px]">
           <span class="grid-cols-1 md:grid-cols-2 lg:grid-cols-2 auto-rows-auto">
-            <img src="assets/Icons/Linguage/Python.svg" alt="Python">
+            <img src="assets/Icons/Linguage/Python.svg " alt="Python">
           </span>
           <span>
             <img src="assets/Icons/Linguage/HTML.svg" alt="HTML">
@@ -186,7 +165,7 @@
       <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center p-20px ">
         <h2 class="font-medium text-[28px]">
           Skills Adicionais
-         </h2>
+        </h2>
         <div class="flex max-sm:grid flex-row max-sm:grid-cols-2 gap-10 max-sm:w-[150px] max-xl:w-[500px] w-[450px]">
           <span>
             <img src="assets/Icons/Linguage/Git.svg" alt="Git">
@@ -206,27 +185,52 @@
           <span>
             <img src="assets/Icons/Linguage/Frame.svg" alt="TailwindCSS">
           </span>
-      </div>
+        </div>
     </section>
 
     <!-- Projetos -->
-    <section class="flex flex-col items-center p-[50px]" >
-      <h2>Galeria de Projetos</h2>
-      <p>Todos os projetos estão armazenado em meu portfolio do <i><a  href="https://github.com/oDyKoz" target="_blank">Github</a></i></p>
-      <div class="flex gap-20">
-        <div class="card1">
-            <h3>Figma - Portfolio 2026 - <i>Em progresso</i></h3>
-            <a href="https://www.figma.com/design/iDl8jUU3jWMSisSezw8CzE/Model-Portfolio?node-id=112-2&t=x9qwfMr0IWr70vTS-1" target="_blank" ><img src="assets/img/Projects/portfolioFigma.png" class="img_dpo"></a>
+    <section id="projetos" class="pb-50px pt-50px">
+      <div class="flex flex-col items-center">
+        <div class="flex flex-col gap-20 center">
+          <h2 class="font-medium max-md:text-[30px] text-[40px] padding-top">
+            Galeria de Projetos</h2>
         </div>
-        <div class="card1">
-            <h3>Projeto DPOnet</h3>
-            <a href="https://github.com/oDyKoz/DPOnet" target="_blank" ><img src="assets/img/Projects/DPOnet.png" class="img_dpo"></a>
+        <div class="flex flex-col">
+          <p class="text-[16px]">Todos os projetos estão armazenado em meu portfolio do <i><a
+                href="https://github.com/oDyKoz" target="_blank">Github
+              </a></i></p>
         </div>
+      </div>
+
+      <div class="flex 2x1:flex-row md:flex-row flex-col gap-20 center">
+        <div class="flex flex-col md:flex-row gap-10 justify-center p-50px">
+          <div class="flex flex-col">
+            <div class="flex">
+              <h3>Figma - Portfolio 2026 </h3>
+            </div>
+            <div class="flex">
+              <a href="https://www.figma.com/design/iDl8jUU3jWMSisSezw8CzE/Model-Portfolio?node-id=112-2&t=x9qwfMr0IWr70vTS-1"
+                target="_blank">
+                <img src="assets/img/Projects/portfolioFigma.png" class="img_portfolio">
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex">
+              <h3>Projeto DPOnet</h3>
+            </div>
+            <div class="flex">
+              <a href="https://github.com/oDyKoz/DPOnet" target="_blank">
+                <img src="assets/img/Projects/DPOnet.png" class="img_portfolio">
+              </a>
+            </div>
+          </div>
+      </div>
       </div>
     </section>
 
 
-    <!-- Rotapé de contato -->
+    <!-- Rotapé para contato -->
     <footer>
       <div>
         <div>
@@ -246,7 +250,7 @@
     </footer>
 
   </main>
-  
+
   <script src="js/config.js"></script>
 
 </body>

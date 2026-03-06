@@ -7,16 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-sky-700: oklch(50% 0.134 242.749);
     --color-fuchsia-300: oklch(83.3% 0.145 321.434);
     --color-fuchsia-500: oklch(66.7% 0.295 322.15);
     --color-fuchsia-600: oklch(59.1% 0.293 322.896);
     --color-fuchsia-900: oklch(40.1% 0.17 325.612);
-    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-medium: 500;
-    --radius-xl: 0.75rem;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --default-transition-duration: 150ms;
@@ -174,77 +171,35 @@
   }
 }
 @layer utilities {
-  .pointer-events-auto {
-    pointer-events: auto;
-  }
   .fixed {
     position: fixed;
   }
   .relative {
     position: relative;
   }
-  .top-\[50\%\] {
-    top: 50%;
-  }
   .z-\[2\] {
     z-index: 2;
-  }
-  .ml-\[10px\] {
-    margin-left: 10px;
   }
   .flex {
     display: flex;
   }
-  .hidden {
-    display: none;
-  }
   .inline-block {
     display: inline-block;
-  }
-  .table {
-    display: table;
   }
   .w-\[35px\] {
     width: 35px;
   }
-  .w-\[37px\] {
-    width: 37px;
-  }
   .w-\[100px\] {
     width: 100px;
   }
-  .w-\[300px\] {
-    width: 300px;
-  }
-  .w-\[400px\] {
-    width: 400px;
-  }
   .w-\[450px\] {
     width: 450px;
-  }
-  .w-\[480px\] {
-    width: 480px;
-  }
-  .w-\[500px\] {
-    width: 500px;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .transform-\[translateY\(-50\%\)\] {
-    transform: translateY(-50%);
   }
   .transform-\[translateY\(30\%\)\] {
     transform: translateY(30%);
   }
   .animate-bounce {
     animation: var(--animate-bounce);
-  }
-  .resize {
-    resize: both;
   }
   .auto-rows-auto {
     grid-auto-rows: auto;
@@ -264,6 +219,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-end {
+    justify-content: flex-end;
+  }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -282,13 +240,6 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .bg-\[\#491D74\] {
     background-color: #491D74;
   }
@@ -298,20 +249,14 @@
   .bg-\[\#281040\] {
     background-color: #281040;
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
-  .bg-black\/50 {
-    background-color: color-mix(in srgb, #000 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
-    }
-  }
-  .p-\[50px\] {
-    padding: 50px;
-  }
   .text-center {
     text-align: center;
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .text-\[18px\] {
+    font-size: 18px;
   }
   .text-\[28px\] {
     font-size: 28px;
@@ -331,18 +276,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .selection\:bg-fuchsia-300 {
     & *::selection {
@@ -413,10 +346,10 @@
       }
     }
   }
-  .hover\:bg-sky-700 {
+  .hover\:text-fuchsia-500 {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-sky-700);
+        color: var(--color-fuchsia-500);
       }
     }
   }
@@ -451,49 +384,14 @@
       width: 120px;
     }
   }
-  .max-xl\:w-\[200px\] {
-    @media (width < 80rem) {
-      width: 200px;
-    }
-  }
-  .max-xl\:w-\[250px\] {
-    @media (width < 80rem) {
-      width: 250px;
-    }
-  }
-  .max-xl\:w-\[300px\] {
-    @media (width < 80rem) {
-      width: 300px;
-    }
-  }
-  .max-xl\:w-\[400px\] {
-    @media (width < 80rem) {
-      width: 400px;
-    }
-  }
-  .max-xl\:w-\[480px\] {
-    @media (width < 80rem) {
-      width: 480px;
-    }
-  }
   .max-xl\:w-\[500px\] {
     @media (width < 80rem) {
       width: 500px;
     }
   }
-  .max-xl\:w-\[800px\] {
-    @media (width < 80rem) {
-      width: 800px;
-    }
-  }
   .max-lg\:w-\[480px\] {
     @media (width < 64rem) {
       width: 480px;
-    }
-  }
-  .max-md\:w-\[200px\] {
-    @media (width < 48rem) {
-      width: 200px;
     }
   }
   .max-md\:text-\[28px\] {
@@ -509,11 +407,6 @@
   .max-sm\:grid {
     @media (width < 40rem) {
       display: grid;
-    }
-  }
-  .max-sm\:w-\[100px\] {
-    @media (width < 40rem) {
-      width: 100px;
     }
   }
   .max-sm\:w-\[150px\] {
@@ -541,11 +434,6 @@
       top: 50%;
     }
   }
-  .sm\:w-\[200px\] {
-    @media (width >= 40rem) {
-      width: 200px;
-    }
-  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -566,6 +454,11 @@
       flex-direction: row;
     }
   }
+  .lg\:gap-10 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:gap-20 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 20);
@@ -581,29 +474,9 @@
       font-size: 40px;
     }
   }
-  .xl\:w-\[20px\] {
-    @media (width >= 80rem) {
-      width: 20px;
-    }
-  }
-  .xl\:w-\[100px\] {
-    @media (width >= 80rem) {
-      width: 100px;
-    }
-  }
-  .xl\:w-\[120px\] {
-    @media (width >= 80rem) {
-      width: 120px;
-    }
-  }
   .xl\:w-\[150px\] {
     @media (width >= 80rem) {
       width: 150px;
-    }
-  }
-  .xl\:w-\[450px\] {
-    @media (width >= 80rem) {
-      width: 450px;
     }
   }
 }
@@ -645,19 +518,9 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-content {
   syntax: "*";
@@ -691,9 +554,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-content: "";
       --tw-duration: initial;
     }
