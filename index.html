@@ -6,14 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <title>Portfólio de Dymas - Desenvolvedor Web e Software</title>
 </head>
 
 <body class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
 
-  <header>
-    <nav class="flex bg-transparent-nav z-[2] fixed justify-center items-center">
-      <ul class="flex flex-row lg:gap-10 gap-5 text-[14px] lg:text-[18px] text-white hover:text-fuchsia-500">
+  <header class="fixed flex w-full bg-transparent-nav z-[2] flex-col">
+    <div id="menu" class="flex lg:hidden text-2xl text-white cursor-pointer justify-end">
+      <i class="bi bi-list" title="Menu"></i>
+    </div>
+    <nav>
+      <ul
+        class="hidden lg:flex flex-col gap-5 lg:flex-row lg:gap-10 text-[18px] justify-end items-end lg:justify-center lg:items-center">
         <li>
           <a href="/">Início</a>
         </li>
@@ -37,60 +42,70 @@
     <!-- Inicio -->
     <section id="inicio">
 
-      <div id="conteinerFoto" class="flex justify-center items-center
-      lg:gap-20 gap-10 flex-col lg:flex-row">
+      <div id="conteinerFoto" class="flex justify-center items-center lg:gap-20 gap-10 flex-col lg:flex-row">
         <div id="Elipse2">
           <div id="Elipse1">
             <figure id="foto">
-              <img src="assets/img/foto.png" class="rounded-full">
+              <img src="assets/img/foto.png" class="w-[280px]" title="Foto de Dymas">
             </figure>
           </div>
         </div>
 
         <div id="conteinerInfo">
           <div>
-            <h1 id="increaseSize" class="text-[30px]">Seja Bem-vindo(a) ao meu
-              <spam
+            <h1 id="increaseSize" class="lg:text-[40px] text-[35px]">Seja Bem-vindo(a) ao meu
+              <span
                 class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-x-10 before:bg-fuchsia-500 hover:before:-skew-y-10 before:transition-transform before:duration-300 hover:before:bg-fuchsia-600">
                 <span class="relative text-white">Portfólio</span>
-              </spam>
+              </span>
             </h1>
-            <p>Clique na seta para saber mais <br>
-              ou no menu ao lado!</p>
+            <div class="lg:text-[20px] text-[18px]">
+              <p> Clique na seta para saber mais <br>
+                ou no menu ao lado!</p>
+            </div>
           </div>
 
-          <div class=" flex w-[35px] sm:top-[50%] transform-[translateY(30%)]">
-            <a href="#sobre" class="animate-bounce">
-              <img src="assets/Icons/Arrow.png">
+          <div class=" flex w-[35px] sm:top-[50%] top-[40%] animate-bounce pt-20px">
+            <a href="#sobre">
+              <img src="assets/Icons/Arrow.png" title="Seta">
             </a>
           </div>
         </div>
+      </div>
     </section>
 
     <!-- Sobre Mim -->
     <section id="sobre">
       <div class="flex flex-col justify-center gap-5 ">
-        <div class="flex flex-col gap-10 justify-center items-stard">
-          <h2 class="font-medium md:text-[40px] text-[30px]">Me conheça um pouco melhor!</h2>
-          <p>
-            Olá, tudo bem? <br> Me chamo Dymas Felipe, tenho 20 anos idade atualmente e sou entusiasta na área de
-            Desenvolvimento Web & Software. Sou apaixonado por tecnologia e estou sempre buscando aprender e me
-            aprimorar nessa área. Meu objetivo é me tornar um desenvolvedor web de destaque, criando soluções inovadoras
-            e impactantes para os usuários. Estou comprometido em adquirir conhecimentos sólidos e habilidades práticas
-            para alcançar esse objetivo.
-          </p>
-          <p>
-            Possuo experiências em atendimento ao cliente, suporte técnico e desenvolvimento de projetos pessoais, o que
-            me proporcionou habilidades de comunicação, resolução de problemas e trabalho em equipe. Estou sempre aberto
-            a novos desafios e oportunidades de crescimento profissional. Acredito que minha paixão pela tecnologia,
-            combinada com minha dedicação e vontade de aprender, me tornarão um desenvolvedor web de sucesso no futuro.
-          </p>
+        <div class="flex flex-col gap-10 justify-center items-start">
+          <h2 class="font-medium lg:text-[40px] text-[35px]">Me conheça um pouco melhor!</h2>
+          <div class="lg:text-[20px] text-[18px] gap-10 flex flex-col w-full max-w-[800px]">
+            <p>
+              Olá, tudo bem? <br> Me chamo Dymas Felipe, tenho 20 anos idade atualmente e sou entusiasta na área de
+              Desenvolvimento Web & Software. Sou apaixonado por tecnologia e estou sempre buscando aprender e me
+              aprimorar nessa área. Meu objetivo é me tornar um desenvolvedor web de destaque, criando soluções
+              inovadoras
+              e impactantes para os usuários. Estou comprometido em adquirir conhecimentos sólidos e habilidades
+              práticas
+              para alcançar esse objetivo.
+            </p>
+            <p>
+              Possuo experiências em atendimento ao cliente, suporte técnico e desenvolvimento de projetos pessoais, o
+              que
+              me proporcionou habilidades de comunicação, resolução de problemas e trabalho em equipe. Estou sempre
+              aberto
+              a novos desafios e oportunidades de crescimento profissional. Acredito que minha paixão pela tecnologia,
+              combinada com minha dedicação e vontade de aprender, me tornarão um desenvolvedor web de sucesso no
+              futuro.
+            </p>
+          </div>
         </div>
-        <div class="flex gap-3 w-[450px]">
-          <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank" class="hover:animate-pulse">
+        <div class="flex gap-3 max-w-[450px] w-full">
+          <a href="https://www.linkedin.com/in/dymas-felipe/" target="_blank" class="hover:animate-pulse"
+            title="LinkedIn">
             <img src="assets/img/Social/LinkedIn.png">
           </a>
-          <a href="https://github.com/oDyKoz" target="_blank" class="hover:animate-pulse">
+          <a href="https://github.com/oDyKoz" target="_blank" class="hover:animate-pulse" title="GitHub">
             <img src="assets/img/Social/GitHub.png">
           </a>
         </div>
@@ -105,15 +120,15 @@
         </h2>
         <p class="text-center"><i>Clique nas imagens para navegar</i></p>
       </div>
-      <div class="flex 2x1:flex-row md:flex-row flex-col gap-20">
+      <div class="flex 2xl:flex-row md:flex-row flex-col gap-20">
         <!-- Paschoalloto -->
         <div class="flex lg:flex-row flex-col p-20px gap-5">
           <a href="https://www.paschoalotto.com.br/" target="_blank">
-            <img class="max-xl:w-[100px] w-[100px]" src="assets/img/Work/Paschoalotto.png">
+            <img class="w-[100px]" src="assets/img/Work/Paschoalotto.png" title="Paschoalotto">
           </a>
           <div class="flex flex-col gap-3">
             <h2 class="font-medium text-[28px]">Paschoalotto.</h2>
-            <p>Recuperação de Crédito, <br>
+            <p class="text-[18px]">Recuperação de Crédito, <br>
               Estagiário.<br>
               <i>jane/2022 - agosto/2022</i>
             </p>
@@ -122,11 +137,11 @@
         <!-- Tray E-commerce -->
         <div class="flex lg:flex-row flex-col p-20px gap-5">
           <a href="https://www.tray.com.br/" target="_blank">
-            <img class="max-xl:w-[120px] xl:w-[150px]" src="assets/img/Work/Tray.png">
+            <img class="max-xl:w-[120px] xl:w-[150px]" src="assets/img/Work/Tray.png" title="Tray E-commerce">
           </a>
           <div class="flex flex-col gap-3">
             <h2 class="font-medium text-[28px]">Tray E-commerce.</h2>
-            <p>Analista de Suporte Técnico, <br>
+            <p class="text-[18px]">Analista de Suporte Técnico, <br>
               Jovem Aprendiz.<br>
               <i>jane/2025 - jane/2026</i>
             </p>
@@ -137,53 +152,57 @@
     <!-- Linguagens que tenho conhecimento e familiaridade -->
 
     <section class="flex flex-col bg-[#281040]" id="skills">
-      <div class="flex flex-col gap-10 center">
-        <h2 class="font-medium max-md:text-[30px] text-[40px] padding-top">
+      <div class="flex flex-col justify-center items-center pb-20px">
+        <h2 class="font-medium md:text-[40px] text-[30px] padding-top">
           Conhecimentos & Linguagens</h2>
       </div>
       <!-- Linguagens e Tecnologias -->
-      <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center p-20px ">
-        <h2 class="font-medium max-md:text-[28px] text-[32px]">
-          Linguagens e Tecnologias
-        </h2>
-        <div
-          class="flex max-sm:grid flex-row max-sm:grid-cols-2 max-sm:gap-10 gap-20 max-sm:w-[200px] max-lg:w-[480px] max-xl:w-[500px]">
-          <span class="grid-cols-1 md:grid-cols-2 lg:grid-cols-2 auto-rows-auto">
-            <img src="assets/Icons/Linguage/Python.svg " alt="Python">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/HTML.svg" alt="HTML">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/JavaScript.svg" alt="JavaScript">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/PHP.svg" alt="PHP">
-          </span>
+      <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center pb-50px">
+        <div class="flex justify-center items-center flex-col gap-10">
+          <div class="pt-20px">
+            <h3 class="font-medium md:text-[32px] text-[28px]">
+              Linguagens e Tecnologias
+            </h3>
+          </div>
+          <div class="grid md:flex lg:flex-row grid-cols-2 lg:grid-cols-1 gap-15 w-[400px] justify-items-center">
+            <span>
+              <img src="assets/Icons/Linguage/Python.svg " alt="Python" title="Python">
+            </span>
+            <span>
+              <img src="assets/Icons/Linguage/HTML.svg" alt="HTML e CSS" title="HTML e CSS">
+            </span>
+            <span>
+              <img src="assets/Icons/Linguage/JavaScript.svg" alt="JavaScript" title="JavaScript">
+            </span>
+            <span>
+              <img src="assets/Icons/Linguage/PHP.svg" alt="PHP" title="PHP">
+            </span>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center p-20px ">
-        <h2 class="font-medium text-[28px]">
+      <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center pt-20px ">
+        <h3 class="font-medium text-[28px]">
           Skills Adicionais
-        </h2>
-        <div class="flex max-sm:grid flex-row max-sm:grid-cols-2 gap-10 max-sm:w-[150px] max-xl:w-[500px] w-[450px]">
+        </h3>
+        <div
+          class="grid md:flex flex-row lg:grid-cols-none grid-cols-2 gap-10 sm:w-[200px] md:w-[300px] w-[200px] pb-50px">
           <span>
-            <img src="assets/Icons/Linguage/Git.svg" alt="Git">
+            <img src="assets/Icons/Linguage/Git.svg" alt="Git" title="Git">
           </span>
           <span>
-            <img src="assets/Icons/Linguage/React.svg" alt="React">
+            <img src="assets/Icons/Linguage/React.svg" alt="React" title="React">
           </span>
           <span>
-            <img src="assets/Icons/Linguage/Bootstrap.svg" alt="Bootstrap">
+            <img src="assets/Icons/Linguage/Bootstrap.svg" alt="Bootstrap" title="Bootstrap">
           </span>
           <span>
-            <img src="assets/Icons/Linguage/Figma.svg" alt="Figma">
+            <img src="assets/Icons/Linguage/Figma.svg" alt="Figma" title="Figma">
           </span>
           <span>
-            <img src="assets/Icons/Linguage/Flask.svg" alt="Flask">
+            <img src="assets/Icons/Linguage/Flask.svg" alt="Flask" title="Flask">
           </span>
           <span>
-            <img src="assets/Icons/Linguage/Frame.svg" alt="TailwindCSS">
+            <img src="assets/Icons/Linguage/Frame.svg" alt="TailwindCSS" title="TailwindCSS">
           </span>
         </div>
     </section>
@@ -202,7 +221,7 @@
         </div>
       </div>
 
-      <div class="flex 2x1:flex-row md:flex-row flex-col gap-20 center">
+      <div class="flex 2xl:flex-row md:flex-row flex-col gap-20 center">
         <div class="flex flex-col md:flex-row gap-10 justify-center p-50px">
           <div class="flex flex-col">
             <div class="flex">
@@ -225,7 +244,7 @@
               </a>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     </section>
 
@@ -236,13 +255,13 @@
         <div>
           <strong class="list1">Contato</strong>
           <a href="https://wa.me/+5514997919470" target="_blank">
-            <img src="assets/img/Social/WhatsApp.png">
+            <img src="assets/img/Social/WhatsApp.png" alt="WhatsApp" title="WhatsApp">
           </a>
           <a href="" target="_blank">
-            <img src="assets/img/Social/Telegram-Mini.png">
+            <img src="assets/img/Social/Telegram-Mini.png" alt="Telegram" title="Telegram">
           </a>
           <a href="">
-            <img src="assets/img/Social/Discord-Mini.png" alt="">
+            <img src="assets/img/Social/Discord-Mini.png" alt="Discord" title="Discord ">
           </a>
         </div>
 

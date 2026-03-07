@@ -1,21 +1,15 @@
-*,
-*:after,
-*:before { 
-  margin: 0;
-  padding: 0;
-  border: 0;
-  text-decoration: none;
-  list-style: none;
+* {
+  box-sizing: border-box;
 }
 
 :root { 
-  --black: (#0D0520);
-  --write: (#BAACDD);
-  --blue: (#9CA5F8);
-  --dark: (#27274d);
-  --gray: (#515151);
-  --purple-black: (#160925);
-  --purple-light-n2: (#B988E3);
+  --black: #0D0520;
+  --white: #BAACDD;
+  --blue: #9CA5F8;
+  --dark: #27274d;
+  --gray: #515151;
+  --purple-black: #160925;
+  --purple-light-n2: #B988E3;
 }
 
 /* Regras especiais */
@@ -30,7 +24,6 @@ body * {
 }
 
 body { 
-  height: 100vh;
   background: #1F0439;
   overflow-x: hidden;
 }
@@ -47,15 +40,35 @@ body {
   font-family: 'tt0 medium', sans-serif;
 }
 
-.center { 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Seção do Nav */
 
 /* Não sabia fazer o efeito transparente e tive que usar IA */
+
+/* @media (max-width: 620px) {
+  #menu {
+    display: flex;
+    justify-content: end;
+    color: white;
+    cursor: pointer;
+
+    .bi {
+      font-size: 24px;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 621px) {
+  #menu {
+    display: none;
+  }
+} */
+
 
 .bg-transparent-nav {
    /* Cor de fundo com transparência */
@@ -68,20 +81,19 @@ body {
   /* Borda sutil para destacar */
   border-bottom: 1px solid rgba(34, 34, 34, 0.2);
   
-  position: fixed;
-  top: 0;
-  width: 100%;
   padding: 15px;
-}
-
-@media (max-width:786px) {
-  .bg-transparent-nav {
-    width: 90%;
-  }
 }
 
 .p-20px { 
   padding: 20px;
+}
+
+.pt-20px { 
+  padding-top: 20px;
+}
+
+.pb-20px { 
+  padding-bottom: 20px;
 }
 
 .pb-50px { 
@@ -96,12 +108,6 @@ body {
   padding: 50px;
 }
 
-@media (max-width:768px) {
-  #sobre {
-    padding: 50px 40px 50px 40px;
-  }
-}
-
 #increaseSize {
   font-family: 'tt0 medium', sans-serif;
 }
@@ -110,15 +116,16 @@ body {
 
 #inicio {
   background-color: #160925;
-  padding: 100px 20px 150px 40px;
-  #foto {
-    width: 280px;
-  }
+  padding: 180px 20px 270px 40px;
 }
 
-@media (max-width: 780px) {
+#inicio #foto {
+  width: 280px;
+}
+
+@media (max-width: 1025px) {
   #inicio {
-    padding: 80px 40px 120px 40px;
+    padding: 100px 20px 192px 40px;
     #foto{
         width: 200px;
         }
@@ -128,6 +135,13 @@ body {
 #sobre {
   padding: 80px 150px 50px 120px;
 }
+
+@media (max-width:768px) {
+  #sobre {
+    padding: 50px 0px 50px 40px;
+  }
+}
+
 
 #conteinerInfo p {
   padding: 20px 0px 0px 0px;
@@ -158,12 +172,12 @@ body {
 /* Seção de experiencia */
 
 #experiencia {
-  padding: 30px 145px 160px 190px;
+  padding: 30px 0px 160px 30px;
 }
 
 @media (max-width: 780px) {
   #experiencia {
-    padding: 30px 40px 160px 40px;
+    padding: 30px 0px 160px 40px;
   }
 }
 
@@ -171,6 +185,9 @@ body {
 
 #skills {
   padding: 30px 0px 0px 0px;
+  h2 {
+    padding: 0px 0px 0px 40px;
+  }
 }
 
 /*Galeria de Projetos*/
@@ -181,16 +198,13 @@ body {
 /*Regras dos card*/
 
 .img_portfolio {
-  width: 500px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 @media (max-width: 780px) {
   .img_portfolio {
-    width: 60%;
-    max-width: 500px;
     height: auto;
     max-height: 200px;
 
@@ -212,7 +226,6 @@ footer a {
   display: block;
   margin-bottom: 16px;
   text-decoration: none;
-  max-width: 350px;
 }
 
 footer p a { 
