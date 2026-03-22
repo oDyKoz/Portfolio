@@ -88,6 +88,14 @@ body {
   padding: 20px;
 }
 
+.pr-15px { 
+  padding-right: 15px;
+}
+
+.pr-20px { 
+  padding-right: 20px;
+}
+
 .pt-20px { 
   padding-top: 20px;
 }

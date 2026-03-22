@@ -12,13 +12,13 @@
 
 <body class="selection:bg-fuchsia-300 selection:text-fuchsia-900">
 
-  <header class="fixed flex w-full bg-transparent-nav z-[2] flex-col">
+  <header class="fixed flex w-full bg-transparent-nav z-[2] flex-col pr-20px">
     <div id="menu" class="flex lg:hidden text-2xl text-white cursor-pointer justify-end">
       <i class="bi bi-list" title="Menu"></i>
     </div>
     <nav>
       <ul
-        class="hidden lg:flex flex-col gap-5 lg:flex-row lg:gap-10 text-[18px] justify-end items-end lg:justify-center lg:items-center">
+        class="hidden lg:flex flex-col gap-5 lg:flex-row lg:gap-10 text-[18px] justify-end items-end lg:justify-center lg:items-center pt-20px">
         <li>
           <a href="/">Início</a>
         </li>
@@ -79,7 +79,7 @@
       <div class="flex flex-col justify-center gap-5 ">
         <div class="flex flex-col gap-10 justify-center items-start">
           <h2 class="font-medium lg:text-[40px] text-[35px]">Me conheça um pouco melhor!</h2>
-          <div class="lg:text-[20px] text-[18px] gap-10 flex flex-col w-full max-w-[800px]">
+          <div class="lg:text-[20px] text-[18px] gap-10 flex flex-col w-full max-w-[800px] pr-15px">
             <p>
               Olá, tudo bem? <br> Me chamo Dymas Felipe, tenho 20 anos idade atualmente e sou entusiasta na área de
               Desenvolvimento Web & Software. Sou apaixonado por tecnologia e estou sempre buscando aprender e me
@@ -122,7 +122,7 @@
       </div>
       <div class="flex 2xl:flex-row md:flex-row flex-col gap-20 justify-center items-center">
         <!-- Paschoalloto -->
-        <div class="flex lg:flex-row flex-col p-20px gap-5">
+        <div class="flex lg:flex-row flex-col pr-20px gap-5">
           <a href="https://www.paschoalotto.com.br/" target="_blank">
             <img class="w-[100px]" src="assets/img/Work/Paschoalotto.png" title="Paschoalotto">
           </a>
@@ -152,9 +152,10 @@
     <!-- Linguagens que tenho conhecimento e familiaridade -->
 
     <section class="flex flex-col bg-[#281040]" id="skills">
-      <div class="flex flex-col justify-center items-center pb-20px">
-        <h2 class="font-medium md:text-[40px] text-[30px] padding-top">
+      <div class="flex flex-col justify-center items-center pb-20px pr-15px">
+        <h2 class="font-medium md:text-[40px] text-[27px] padding-top">
           Conhecimentos & Linguagens</h2>
+          <p>Clique nas imagens para saber mais</p>
       </div>
       <!-- Linguagens e Tecnologias -->
       <div class="flex flex-col gap-10 bg-[#160925] justify-center items-center pb-50px">
@@ -164,18 +165,26 @@
               Linguagens e Tecnologias
             </h3>
           </div>
-          <div class="grid md:flex lg:flex-row grid-cols-2 lg:grid-cols-1 gap-15 max-w-[600px] w-[200px] lg:w-[400px] justify-items-center">
+          <div class="grid md:flex lg:flex-row grid-cols-2 lg:grid-cols-1 gap-15 h-full md:w-[500px] justify-items-center">
             <span>
-              <img src="assets/Icons/Linguage/Python.svg " alt="Python" title="Python">
+              <a href="https://www.python.org/" target="_blank">
+                <img src="assets/Icons/Linguage/Python.svg " alt="Python" title="Python">
+              </a>
             </span>
             <span>
-              <img src="assets/Icons/Linguage/HTML.svg" alt="HTML e CSS" title="HTML e CSS">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                <img src="assets/Icons/Linguage/HTML.svg" alt="HTML e CSS" title="HTML e CSS">
+              </a>
             </span>
             <span>
-              <img src="assets/Icons/Linguage/JavaScript.svg" alt="JavaScript" title="JavaScript">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                <img src="assets/Icons/Linguage/JavaScript.svg" alt="JavaScript" title="JavaScript">
+              </a>
             </span>
             <span>
-              <img src="assets/Icons/Linguage/PHP.svg" alt="PHP" title="PHP">
+              <a href="https://www.php.net/" target="_blank">
+                <img src="assets/Icons/Linguage/PHP.svg" alt="PHP" title="PHP">
+              </a>
             </span>
           </div>
         </div>
@@ -184,26 +193,37 @@
         <h3 class="font-medium text-[28px]">
           Skills Adicionais
         </h3>
-        <div
-          class="grid md:flex flex-row lg:grid-cols-none grid-cols-2 gap-10 max-w-[500px] w-[150px] lg:w-[400px] pb-50px">
-          <span>
-            <img src="assets/Icons/Linguage/Git.svg" alt="Git" title="Git">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/React.svg" alt="React" title="React">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/Bootstrap.svg" alt="Bootstrap" title="Bootstrap">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/Figma.svg" alt="Figma" title="Figma">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/Flask.svg" alt="Flask" title="Flask">
-          </span>
-          <span>
-            <img src="assets/Icons/Linguage/Frame.svg" alt="TailwindCSS" title="TailwindCSS">
-          </span>
+        <div class="grid md:flex flex-row lg:grid-cols-none grid-cols-2 gap-10 h-full md:w-[450px] max-md:w-[150px] pb-50px">
+            <span>
+              <a href="https://git-scm.com/" target="_blank">
+                <img src="assets/Icons/Linguage/Git.svg" alt="Git" title="Git">
+              </a>
+            </span>
+            <span>
+              <a href="https://react.dev/" target="_blank">
+                <img src="assets/Icons/Linguage/React.svg" alt="React" title="React">
+              </a>
+            </span>
+            <span>
+              <a href="https://getbootstrap.com/" target="_blank">
+                <img src="assets/Icons/Linguage/Bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+              </a>
+            </span>
+            <span>
+              <a href="https://www.figma.com/" target="_blank">
+                <img src="assets/Icons/Linguage/Figma.svg" alt="Figma" title="Figma">
+              </a>
+            </span>
+            <span>
+              <a href="https://flask.palletsprojects.com/en/stable/" target="_blank">
+                <img src="assets/Icons/Linguage/Flask.svg" alt="Flask" title="Flask">
+              </a>
+            </span>
+            <span>
+              <a href="https://tailwindcss.com/" target="_blank">
+                <img src="assets/Icons/Linguage/Frame.svg" alt="TailwindCSS" title="TailwindCSS">
+              </a>
+            </span>
         </div>
     </section>
 
@@ -257,10 +277,10 @@
           <a href="https://wa.me/+5514997919470" target="_blank">
             <img src="assets/img/Social/WhatsApp.png" alt="WhatsApp" title="WhatsApp">
           </a>
-          <a href="" target="_blank">
+          <a href="https://t.me/DymasF" target="_blank">
             <img src="assets/img/Social/Telegram-Mini.png" alt="Telegram" title="Telegram">
           </a>
-          <a href="">
+          <a href="https://discord.com/users/840435508844953641" target="_blank">
             <img src="assets/img/Social/Discord-Mini.png" alt="Discord" title="Discord ">
           </a>
         </div>
